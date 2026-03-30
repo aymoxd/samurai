@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <link rel="stylesheet" href="dist/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>samurai</title>
+</head>
+
+<body>
+
+  <!-- ================================ navbar ======================================== -->
+
+  <header class="">
+    <nav class="bg-white/90 backdrop-blur-sm text-secondary w-full px-5 md:px-7 lg:px-12 flex fixed z-20 top-0 left-1/2 -translate-x-1/2 items-center justify-between h-20">
+      <a href="#" class="font-semibold uppercase text-lg transition-all duration-300 hover:text-primary">Samurai</a>
+
+      <ul class="hidden sm:flex sm:w-96 text-sm items-center justify-between">
+        <li class="hover:border-b hover:border-primary hover:text-primary transition-all duration-300"><a class="uppercase" href="#menu">Menu</a></li>
+        <li class="hover:border-b hover:border-primary hover:text-primary transition-all duration-300"><a class="uppercase" href="#reservations">Reservations</a></li>
+        <li class="hover:border-b hover:border-primary hover:text-primary transition-all duration-300"><a class="uppercase" href="#about">about</a></li>
+        <li class="hover:border-b hover:border-primary hover:text-primary transition-all duration-300"><a class="uppercase" href="#menu">Gallery</a></li>
+      </ul>
+
+      <a class="bg-primary text-white px-10 py-3 text-nowrap" href="reservations">Book Now</a>
+    </nav>
+  </header>
+
+    <!-- ================================ main ======================================== -->
+  <main class="space-y-20">
+        <!------------------------------- hero section ------------------------------------ -->
+    <section class="bg-[url('/img/hero.webp')] fadeIn bg-cover bg-center h-screen relative">
+         <div class="w-full px-5 md:px-7 lg:px-12 absolute flex flex-col justify-center items-start inset-0 bg-gradient-to-r from-white to-white/40 sm:to-transparent">
+
+            <span class=" text-xs uppercase tracking-[0.3em] text-primary my-6 block">The Art of the Blade</span>
+            <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-secondary leading-tight mb-8">
+                    Silence. <br/>Precision. <br/>Perfection.
+             </h1>
+             <p class="font-body text-base text-secondary mb-10 max-w-lg leading-relaxed">
+                    An intimate 8-seat counter experience where seasonal ingredients meet the silent mastery of the chef.
+             </p>
+
+              <div class="flex gap-5 flex-col sm:flex-row">
+                      <a class="bg-primary text-white px-10 py-3" href="#">Book Now</a>
+                      <a class="px-10 py-3 text-primary border border-primary" href="#">View Menu</a>
+              </div>
+         </div>
+    </section>
+
+        <!------------------------------- about section ------------------------------------ -->
+
+        <section id="about" class="bg-slate-100 w-full px-5 md:px-7 lg:px-20 flex flex-col items-center justify-center sm:flex-row gap-20 py-10">
+
+                <div class="bg-[url('/img/chef.webp')] w-full relative sm:flex-1 bg-center bg-cover h-96">
+                  <p class="bg-white shadow-md font-serif absolute -bottom-4 -right-4 text-sm italic w-40 flex flex-col items-center justify-center p-3">  "The space between the ingredients is as important as the ingredients themselves." <br> <br> <span class="font-bold">— Chef Sato</span></p>
+                </div>
+
+                <div class="sm:flex-1">
+                  <span class="text-xs uppercase tracking-[0.3em] text-tertiary mb-6 block">Our Philosophy</span>
+                    <h2 class="text-4xl font-bold tracking-tight mb-7">Ma: The Beauty of Negative Space</h2>
+                    <p class="font-body text-sm sm:text-base text-secondary leading-loose mb-6">
+                        The Editorial Omakase isn't just about dining; it's a curated narrative. We believe in the "Silent Chef" approach—where the experience stays out of the way, allowing the purity of the fish and the warmth of the vinegared rice to speak.
+                    </p>
+                    <p class="font-body text-sm sm:text-base text-secondary leading-loose">
+                        Each morning, our chef hand-selects the catch from Tsukiji market arrivals, ensuring only the top 1% of seasonal offerings grace our Hinoki wood counter.
+                    </p>
+                </div>
+
+        </section>
+
+                <!------------------------------- plats section ------------------------------------ -->
+
+        <section id="menu" class="w-full px-5 md:px-7 lg:px-12 flex  gap-10 lg:gap-20 flex-col sm:flex-row">
+
+          <div class="flex-1">
+                  <div class="mb-10">
+                  <span class="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">The Selection</span>
+                  <h2 class="text-5xl font-extrabold tracking-tighter">Daily Curations</h2>
+                  </div>
+
+                  <div class="relative bg-[url('/img/sushiplat.webp')] h-96 bg-cover bg-center">
+                    <div class="absolute p-5 inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-between">
+                       <div class="">
+                        <h3 class="font-body text-2xl text-white mb-2">Grand Omakase</h3>
+                        <p class="text-stone-300 font-label text-xs uppercase tracking-widest">22 Pieces • Chef's Selection</p>
+                       </div>
+                      <span class="bg-primary text-white px-5 py-2 font-bold">$220</span>
+                    </div>
+                  </div>
+
+          </div>
+            <!-- ....................................................... --> 
+          <div class="flex-1 flex flex-col justify-between sm:pt-10">
+                  <!-- ....................column of filter...................... -->
+                   <div class="flex gap-10 mb-10">
+                    <div class="w-full flex items-center justify-center py-2.5 bg-secondary text-white cursor-pointer">Sushi</div>
+                    <div class="w-full flex items-center justify-center py-2.5 border border-secondary cursor-pointer text-secondary">Ramen</div>
+                    <div class="w-full flex items-center justify-center py-2.5 border border-secondary cursor-pointer text-secondary">Indomi</div>
+
+                   </div>
+             
+                  <!-- .....................plats..................... -->
+
+                   <div class="flex flex-col gap-10">
+                         
+                    <div class="flex flex-row gap-5 relative">
+                      <img class="w-20 h-20 object-cover object-center" src="/img/sushi2.webp" alt="" loading="lazy">
+                      <div class="flex flex-col">
+                        <div class="flex flex-row items-center ">
+                            <h3 class="font-bold text-lg">A5 Wagyu &amp; Truffle</h3>
+                             <span class="text-primary font-bold absolute top-0 right-0">28$</span>  
+                        </div>
+                        <p class="font-body text-sm text-secondary leading-relaxed">Torch-seared Kagoshima beef, fresh black truffle shavings, aged soy.</p>
+                      </div>
+                    </div>
+
+                      <div class="flex flex-row gap-5 relative">
+                      <img class="w-20 h-20 object-cover object-center" src="/img/plat2.webp" alt="" loading="lazy">
+                      <div class="flex flex-col">
+                        <div class="flex flex-row items-center ">
+                            <h3 class="font-bold text-lg">Hokkaido Uni Gunkan</h3>
+                             <span class="text-primary font-bold absolute top-0 right-0">50$</span>  
+                        </div>
+                        <p class="font-body text-sm text-secondary leading-relaxed">Vibrant sea urchin from Hokkaido, toasted Ariake nori, warm red vinegar rice.</p>
+                      </div>
+                    </div>
+
+                      <div class="flex flex-row gap-5 relative">
+                      <img class="w-20 h-20 object-cover object-center" src="/img/plat1.webp" alt="" loading="lazy">
+                      <div class="flex flex-col">
+                        <div class="flex flex-row items-center">
+                            <h3 class="font-bold text-lg">Wild Bluefin Otoro</h3>
+                             <span class="text-primary font-bold absolute top-0 right-0">150$</span>  
+                        </div>
+                        <p class="font-body text-sm text-secondary leading-relaxed">Highest grade fatty belly tuna, hand-grated Hon-Wasabi, Shizuoka salt.</p>
+                      </div>
+                    </div>
+
+
+                   </div>
+          </div>
+
+        </section>
+
+                        <!------------------------------- crafted section ------------------------------------ -->
+                      
+      <section class="bg-secondary w-full px-5 py-10 md:px-7 lg:px-20">
+
+                  <div class="mb-10">
+                  <span class="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">The Atmosphere</span>
+                  <h2 class="text-5xl font-extrabold tracking-tighter text-white">Crafted Surroundings</h2>
+                  </div>
+                        <!-- ........................................................ -->
+                  <div class="grid gap-5 grid-cols-2 sm:grid-cols-4 grid-rows-2 sm:grid-rows-1">
+                     <img class="object-cover w-full h-52 sm:h-80 transform translate-y-5" src="img/redcharlie-t-7KEq9M0b0-unsplash.webp" alt="" loading="lazy">
+                     <img class="object-cover w-full h-52 sm:h-80" src="img/gastro-editorial-uAEla_0RCgU-unsplash.webp" alt="" loading="lazy">
+                     <img class="object-cover w-full h-52 sm:h-80 transform translate-y-5" src="img/gia-tu-tran-3EzCJozHHL0-unsplash.webp" alt="" loading="lazy">
+                     <img class="object-cover w-full h-52 sm:h-80" src="img/chef.webp" alt="" loading="lazy">
+                  </div>
+
+
+      </section>
+
+                        <!------------------------------- quotes section ------------------------------------ -->
+
+      <section class="w-full px-5 md:px-7 lg:px-20">
+
+               <div class=" w-full h-96 flex items-center justify-center flex-col space-y-10 italic font-serif">
+                        <span class="text-primary text-8xl font-sans">"</span>
+                        <p class="text-3xl sm:text-5xl text-center text-secondary">"The most focused dining experience of my life. The chef's silence isn't cold—it's respectful. Every piece was a masterclass in texture."</p>
+                        <h3 class="">— Eleanor Vance, Food Critic —</h3>
+               </div>
+
+               <div class="w-full flex gap-4 items-center h-10 justify-center">
+                      <div class="w-2 cursor-pointer h-2 bg-primary rounded-full"></div>
+                      <div class="w-2 cursor-pointer h-2 bg-gray-400 rounded-full"></div>
+                      <div class="w-2 cursor-pointer h-2 bg-gray-400 rounded-full"></div>
+               </div>
+
+      </section>
+
+                       <!------------------------------- contact section ------------------------------------ -->
+      
+      <section id="reservations" class="bg-slate-100 w-full px-5 py-10 md:px-7 lg:px-20 flex gap-10 sm:gap-20 flex-col sm:flex-row">
+        <div class="space-y-10 flex-1 flex flex-col justify-center">
+             <div class="">
+                  <span class="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">The Selection</span>
+                  <h2 class="text-5xl font-extrabold tracking-tighter">Daily Curations</h2>
+                  </div>
+                  <p class="text-secondary mb-5 font-serif">Due to our intimate seating (8 guests per service), we recommend booking at least 3 weeks in advance. For parties larger than 4, please contact us via phone.</p>
+                  <div class="flex flex-col gap-5 text-secondary">
+                    <p>12 Ichibancho, Chiyoda City, Tokyo</p>
+                    <p>Mon – Sat: 5:00 PM – 11:00 PM</p>
+                  </div>
+
+        </div>
+        <!-- ............................................... -->
+        <form class="flex-1 bg-white shadow-md p-10 flex flex-col space-y-5" action="">
+               <div class="flex items-center gap-5">
+                  
+                    <div class="flex-1">
+                         <label class="text-secondary text-sm" for="fullName">Full Name</label>
+                         <input class="outline-none w-full p-3 border-b-2 border-primary" id="fullName" type="text" name="fullName">
+                    </div>
+                    <div class="flex-1 flex flex-col">
+                         <label class="text-secondary text-sm" for="Guests">Guests</label>
+                         <select class="outline-none p-3 border-b-2 border-primary bg-white" name="Guests" id="Guests">
+                            <option value="1 Guest">1 Guest</option>
+                            <option value="2 Guest">2 Guest</option>
+                            <option value="3 Guest">3 Guest</option>
+                            <option value="4 Guest">4 Guest</option>
+                            <option value="5 Guest">5 Guest</option>
+                         </select>
+                    </div>
+
+               </div>
+
+               <div class="flex flex-col">
+                    <label class="text-secondary text-sm" for="date">Preferred Date</label>
+                    <input class="outline-none p-3 border-b-2 border-primary" id="date" type="date" name="date">
+               </div>
+                
+               <div class="flex flex-col">
+                     <label  class="text-secondary text-sm"for="special">Special Requests</label>
+                     <textarea class="outline-none p-3 border-b-2 border-primary max-h-20" id="special" type="date" name="specialRequest"></textarea>
+               </div>
+
+               <button class="bg-primary text-white uppercase py-4" type="submit">Request Reservation</button>
+        </form>
+
+      </section>
+
+  </main>
+
+    <!-- ================================ footer ======================================== -->
+
+    <footer class="bg-black text-white w-full px-5 py-10 md:px-7 lg:px-20 flex gap-10 sm:gap-0 justify-between flex-col sm:flex-row">
+      <div>
+        <h2 class="font-bold uppercase text-xl mb-8">THE EDITORIAL OMAKASE</h2>
+         <p class="opacity-75">A silent dialogue between the ocean and the artisan. </p>
+      </div>
+      <!-- ................................................................. -->
+       <div class="flex flex-col gap-2 italic">
+        <a class="transition-all duration-300 hover:text-primary" href="#">Contact</a>
+        <a class="transition-all duration-300 hover:text-primary" href="#">Instagram</a>
+        <a class="transition-all duration-300 hover:text-primary" href="#">Facebook</a>
+        <span class="text-stone-600">Hours: 5PM - 11PM</span>
+       </div>
+       <!-- ................................................................ -->
+       <div class="flex flex-col items-end justify-end">
+        <p class="font-sans text-xs uppercase tracking-widest text-stone-600 mb-2 text-right">Tokyo • New York • London</p>
+        <p>© 2026 The Editorial Omakase. Crafted with Aymane.</p>
+       </div>
+
+    </footer>
+  
+
+
+
+  <script type="module" src="src/script.js"></script>
+</body>
+</html>
