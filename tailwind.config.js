@@ -3,6 +3,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.js"
   ],
+  safelist: ['opacity-0', 'opacity-100', 'translate-y-6'],
   theme: {
     extend: {
         colors : {
