@@ -4,6 +4,13 @@
   <link rel="stylesheet" href="dist/output.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ========================= rmix icon CDN ============================ -->
+   <link 
+   rel="stylesheet" 
+   href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" 
+   integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" 
+   crossorigin="anonymous" 
+   referrerpolicy="no-referrer" />
   <title>samurai</title>
 </head>
 
@@ -33,11 +40,11 @@
 
          <div class="w-full px-5 md:px-7 lg:px-12 absolute flex flex-col justify-center items-start inset-0 bg-gradient-to-r from-white to-white/40 sm:to-transparent">
 
-            <span class=" text-xs uppercase tracking-[0.3em] text-primary my-6 block">The Art of the Blade</span>
+            <span class=" text-xs uppercase tracking-[0.3em] text-primary my-5 block">The Art of the Blade</span>
             <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-secondary leading-tight mb-8">
                     Silence. <br/>Precision. <br/>Perfection.
              </h1>
-             <p class="font-body text-base text-secondary mb-10 max-w-lg leading-relaxed">
+             <p class="font-body text-base text-secondary mb-5 max-w-lg leading-relaxed">
                     An intimate 8-seat counter experience where seasonal ingredients meet the silent mastery of the chef.
              </p>
 
@@ -191,51 +198,23 @@
                   </div>
                   <p class="text-secondary mb-5 font-serif">Due to our intimate seating (8 guests per service), we recommend booking at least 3 weeks in advance. For parties larger than 4, please contact us via phone.</p>
                   <div class="flex flex-col gap-5 text-secondary">
-                    <p>12 Ichibancho, Chiyoda City, Tokyo</p>
-                    <p>Mon – Sat: 5:00 PM – 11:00 PM</p>
+                    <p> <i class="ri-map-pin-2-fill"></i> 12 Ichibancho, Chiyoda City, Tokyo</p>
+                    <p> <i class="ri-time-fill"></i> Mon – Sat: 5:00 PM – 11:00 PM</p>
                   </div>
 
         </div>
         <!-- ............................................... -->
-        <form class="box transition-opacity duration-700 flex-1 bg-white shadow-md p-10 flex flex-col space-y-5" action="">
-               <div class="flex items-center gap-5">
-                  
-                    <div class="flex-1">
-                         <label class="text-secondary text-sm" for="fullName">Full Name</label>
-                         <input class="outline-none w-full p-3 border-b-2 border-primary" id="fullName" type="text" name="fullName">
-                    </div>
-                    <div class="flex-1 flex flex-col">
-                         <label class="text-secondary text-sm" for="Guests">Guests</label>
-                         <select class="outline-none p-3 border-b-2 border-primary bg-white" name="Guests" id="Guests">
-                            <option value="1 Guest">1 Guest</option>
-                            <option value="2 Guest">2 Guest</option>
-                            <option value="3 Guest">3 Guest</option>
-                            <option value="4 Guest">4 Guest</option>
-                            <option value="5 Guest">5 Guest</option>
-                         </select>
-                    </div>
+             <div id="location">
 
-               </div>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1668.3976428961114!2d-8.4955960156144!3d33.24566613804305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1775677485208!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-               <div class="flex flex-col">
-                    <label class="text-secondary text-sm" for="date">Preferred Date</label>
-                    <input class="outline-none p-3 border-b-2 border-primary" id="date" type="date" name="date">
-               </div>
-                
-               <div class="flex flex-col">
-                     <label  class="text-secondary text-sm"for="special">Special Requests</label>
-                     <textarea class="outline-none p-3 border-b-2 border-primary max-h-20" id="special" type="date" name="specialRequest"></textarea>
-               </div>
-
-               <button class="bg-primary text-white uppercase py-4" type="submit">Request Reservation</button>
-        </form>
-
+             </div>
       </section>
 
   </main>
 
     <!-- ================================ footer ======================================== -->
-
+              
     <footer class="box transition-opacity duration-700 bg-black text-white w-full px-5 py-10 md:px-7 lg:px-20 flex gap-10 sm:gap-0 justify-between flex-col sm:flex-row">
       <div>
         <h2 class="font-bold uppercase text-xl mb-8">THE EDITORIAL OMAKASE</h2>
