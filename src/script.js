@@ -2,10 +2,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray(".box").forEach(box => {
     gsap.from(box, {
-        y: 30,
+        y: 40,
         opacity: 0,
         duration: 0.35,
-        ease: "power2.out",
+        ease: "power3.out",
         scrollTrigger: {
             trigger: box,
             start: "top bottom",
@@ -14,3 +14,18 @@ gsap.utils.toArray(".box").forEach(box => {
         }
     });
 });
+
+
+//lenis
+const lenis = new Lenis({
+  duration: 2.0, 
+  smooth: true,
+  smoothTouch: false,
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
