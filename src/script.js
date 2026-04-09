@@ -1,5 +1,6 @@
-gsap.registerPlugin(ScrollTrigger);
 
+//===================== GSAP ===========================
+gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray(".box").forEach(box => {
     gsap.from(box, {
         y: 40,
@@ -16,7 +17,7 @@ gsap.utils.toArray(".box").forEach(box => {
 });
 
 
-//lenis
+//=================== LENIS =============================
 const lenis = new Lenis({
   duration: 2.0, 
   smooth: true,
@@ -29,3 +30,38 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+//=================== SWIIPER =============================
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  centeredSlides: true,
+  spaceBetween: 50,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  //auto play
+   autoplay: {
+   delay: 5000,
+ },
+
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
+    slideShadows: false,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});

@@ -5,3 +5,21 @@
 html{
   scroll-behavior: smooth;
 }
+
+
+.swiper-pagination-bullet {
+  background: #999 !important; 
+  opacity: 1 !important;
+}
+
+/* النقطة النشيطة */
+.swiper-pagination-bullet-active {
+  background: #ff4d4d !important; 
+  width: 20px !important;
+  border-radius: 10px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-color: #ff6b6b; /* your color here */
+}
